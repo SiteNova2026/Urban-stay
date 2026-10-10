@@ -1,4 +1,3 @@
-console.console.log("The page is loading....");
 
 const menuToggle = document.querySelector(".menu-toggle");
 const primaryNavigation = document.querySelector("#primary-navigation");
