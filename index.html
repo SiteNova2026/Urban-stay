@@ -3,16 +3,465 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Urban Stay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-      <div class="container">
-        <h1>Welcome to My Project</h1>
-        <p>This is a simple HTML, CSS, and JavaScript starter template.</p>
-        <button id="btn">Click Me</button>
-    </div>
-   
-     <script src="./index.js"></script>
+    <header class="site-header">
+        <div class="utility-bar">
+            <div class="header-inner utility-inner">
+                <p class="address" data-contact="address"></p>
+                <div class="contact-links">
+                    <a data-contact="phone" data-contact-href="phoneUrl"></a>
+                    <a data-contact-href="whatsappUrl">WhatsApp</a>
+                    <span data-contact="support">24 / 7 Support</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation-bar">
+            <div class="header-inner navigation-inner">
+                <a class="brand" href="#home" aria-label="Urban Stay home">
+                    <img src="./images/logo.jpg" alt="Urban Stay">
+                </a>
+
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+                    Menu
+                </button>
+
+                <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#rooms">Rooms</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <a class="book-button" href="#contact">Book now</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="entrance" id="home" aria-labelledby="entrance-title">
+            <img class="entrance-image" src="./images/entrance.jpg" alt="Urban Stay reception desk and hotel entrance">
+            <div class="entrance-inner">
+                <div class="entrance-copy">
+                    <p class="entrance-kicker"><span></span> Residential hotel <span class="kicker-dot">&middot;</span> Madurai</p>
+                    <h1 id="entrance-title">Urban<br><em>Stay</em></h1>
+                    <p class="entrance-tagline">Stay Smart. Stay Comfortable. Stay Urban.</p>
+                    <p class="entrance-description">Experience comfortable, secure, and affordable accommodation in the heart of Madurai - where the spirit of the city meets the warmth of home.</p>
+                    <div class="entrance-actions">
+                        <a class="primary-action" href="#contact">Book your stay</a>
+                        <a class="secondary-action" href="#rooms">Explore rooms</a>
+                    </div>
+                    <div class="availability" aria-label="Room availability details">
+                        <div><span>Check-in</span><strong>2:00 PM</strong></div>
+                        <div><span>Check-out</span><strong>12:00 Noon</strong></div>
+                        <div><span>Rooms</span><strong>27 Available</strong></div>
+                    </div>
+                </div>
+            </div>
+            <!-- <a class="scroll-cue" href="#about" aria-label="Scroll to learn about Urban Stay"><span></span></a> -->
+        </section>
+
+        <section class="our-story" id="about" aria-labelledby="story-title">
+            <div class="story-layout">
+                <div class="story-photos">
+                    <img class="story-main-photo" src="./images/entrance.jpg" alt="The Urban Stay reception and welcoming entrance">
+                    <img class="story-inset-photo" src="./images/rooms.jpg" alt="A bright hallway leading to guest rooms">
+                </div>
+
+                <div class="story-content">
+                    <p class="story-kicker"><span></span> Our story</p>
+                    <h2 id="story-title">Where Madurai's<br><em>Soul Meets</em><br>Your Comfort</h2>
+                    <span class="story-rule" aria-hidden="true"></span>
+                    <p>Urban Stay was born from a simple belief — that everyone deserves a place
+that feels like home, no matter how far they've traveled. Nestled in the heart
+of Madurai, steps from the city's most beloved landmarks, we offer more
+than just a room.</p>
+                    <p>Whether you're a family visiting the Meenakshi Amman Temple, a
+professional on an extended corporate assignment, or a traveler seeking a
+clean, safe base — Urban Stay greets you with the warmth of South Indian
+hospitality and the reliability of modern living.</p>
+                    <ul class="story-features">
+                        <li>Family stays</li>
+                        <li>Corporate stays</li>
+                        <li>Long-term stays</li>
+                        <li>Safe &amp; secure</li>
+                    </ul>
+                    <dl class="story-stats">
+                        <div><dt>27</dt><dd>Rooms</dd></div>
+                        <div><dt>3</dt><dd>Floors</dd></div>
+                        <div><dt>24 / 7</dt><dd>Front desk</dd></div>
+                        <div><dt>100%</dt><dd>CCTV coverage</dd></div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section class="rooms-section" id="rooms" aria-labelledby="rooms-title">
+            <div class="rooms-inner">
+                <div class="rooms-heading">
+                    <div>
+                        <p class="rooms-kicker"><span></span> Accommodations</p>
+                        <h2 id="rooms-title">Rooms Crafted<br><em>for Every Stay</em></h2>
+                    </div>
+                    <p class="rooms-intro">27 rooms across three floors each one clean, secure, and designed to feel like a home away from home.</p>
+                </div>
+
+                <article class="room-feature">
+                    <img class="room-photo" src="./images/bed-5.jpg" alt="Deluxe room with white linens, warm orange accents, and a swan towel arrangement">
+                    <div class="room-details">
+                        <p class="room-meta">2 rooms <span>&middot;</span> Ground floor</p>
+                        <h3>Deluxe Room</h3>
+                        <span class="room-rule" aria-hidden="true"></span>
+                        <p class="room-description">Our Deluxe Rooms offer a generously proportioned sanctuary ideal for guests seeking a premium residential experience without compromise. Thoughtfully appointed with quality furnishings, these rooms set the benchmark for comfort at Urban Stay.</p>
+                        <ul class="room-amenities">
+                            <li>Air-conditioned</li>
+                            <li>King-size bed</li>
+                            <li>LED TV with cable</li>
+                            <li>Modern en-suite bathroom</li>
+                            <li>Free Wi-Fi</li>
+                            <li>Daily housekeeping</li>
+                        </ul>
+                        <p class="room-note">Government-issued photo ID mandatory at check-in.</p>
+                    </div>
+                </article>
+
+                <article class="room-feature room-feature-reverse">
+                    <div class="room-details">
+                        <p class="room-meta">18 rooms <span>&middot;</span> All floors</p>
+                        <h3>Double Bed Room</h3>
+                        <span class="room-rule" aria-hidden="true"></span>
+                        <p class="room-description">The most popular choice among families and business travelers alike. Our Double Bed Rooms balance generous space with warm aesthetics - a consistent, reliable retreat after a day exploring Madurai or closing a deal.</p>
+                        <ul class="room-amenities">
+                            <li>Air-conditioned</li>
+                            <li>Double bed</li>
+                            <li>LED TV with cable</li>
+                            <li>Hot &amp; cold water</li>
+                            <li>Free Wi-Fi</li>
+                            <li>Power backup</li>
+                        </ul>
+                        <p class="room-note">Only registered guests permitted to stay in the room.</p>
+                    </div>
+                    <img class="room-photo" src="./images/bed-4.jpg" alt="Double bed room with two beds, white linens, and orange runners">
+                </article>
+
+                <article class="room-feature">
+                    <img class="room-photo" src="./images/bed-2.jpg" alt="Single bed room with orange runner and a folded towel arrangement">
+                    <div class="room-details">
+                        <p class="room-meta">5 rooms <span>&middot;</span> All floors</p>
+                        <h3>Single Bed Room</h3>
+                        <span class="room-rule" aria-hidden="true"></span>
+                        <p class="room-description">Purpose-built for solo travelers and short-stay professionals. The Single Bed Room is efficient, clean, and complete - every essential thoughtfully placed. Comfort doesn't require excess.</p>
+                        <ul class="room-amenities">
+                            <li>Air-conditioned</li>
+                            <li>Single bed</li>
+                            <li>LED TV with cable</li>
+                            <li>Attached bathroom</li>
+                            <li>Free Wi-Fi</li>
+                            <li>Comfortable mattress</li>
+                        </ul>
+                        <p class="room-note">Full payment or advance required at check-in.</p>
+                    </div>
+                </article>
+
+                <article class="room-feature room-feature-reverse">
+                    <div class="room-details">
+                        <p class="room-meta">2 rooms <span>&middot;</span> Upper floors</p>
+                        <h3>Suite Bed Room</h3>
+                        <span class="room-rule" aria-hidden="true"></span>
+                        <p class="room-description">Urban Stay's finest offering. The Suite Bed Room provides expansive living with an elevated sense of space and privacy - ideal for extended corporate stays, special occasions, or simply when you deserve more.</p>
+                        <ul class="room-amenities">
+                            <li>Air-conditioned</li>
+                            <li>Double bed</li>
+                            <li>LED TV with cable</li>
+                            <li>Hot &amp; cold water</li>
+                            <li>Free Wi-Fi</li>
+                            <li>Power backup</li>
+                        </ul>
+                        <p class="room-note">Early check-in &amp; late check-out subject to availability.</p>
+                    </div>
+                    <img class="room-photo" src="./images/bed-5.jpg" alt="Suite room with a king bed, warm orange runner, and towel swan">
+                </article>
+            </div>
+        </section>
+
+        <section class="promise-section" aria-labelledby="promise-title">
+            <div class="promise-inner">
+                <p class="promise-kicker"><span></span> Our promise <span></span></p>
+                <h2 id="promise-title">Why Choose <em>Urban Stay?</em></h2>
+                <div class="promise-grid">
+                    <article class="promise-item">
+                        <h3>01</h3>
+                        <h4>Prime Location in Madurai</h4>
+                        <span aria-hidden="true"></span>
+                        <p>Situated in central Madurai, near the city's major landmarks, hospitals, business centers, and transport hubs, Urban Stay places you at the center of everything.</p>
+                    </article>
+                    <article class="promise-item">
+                        <h3>02</h3>
+                        <h4>Affordable Tariff</h4>
+                        <span aria-hidden="true"></span>
+                        <p>Premium comfort should not carry a premium price. Urban Stay delivers well-furnished, air-conditioned rooms at rates that respect your budget - whether you're here for a night, a week, or a month.</p>
+                    </article>
+                    <article class="promise-item">
+                        <h3>03</h3>
+                        <h4>Safe &amp; Secure Environment</h4>
+                        <span aria-hidden="true"></span>
+                        <p>Rest easy. Every corner of Urban Stay is monitored by 24-hour CCTV surveillance. A dedicated front desk team, secure entry, and registered-guest-only access ensure your safety is never in question.</p>
+                    </article>
+                    <article class="promise-item">
+                        <h3>04</h3>
+                        <h4>Spotlessly Clean Rooms</h4>
+                        <span aria-hidden="true"></span>
+                        <p>Cleanliness is our standard, not our exception. Daily housekeeping, modern bathrooms with hot and cold water, and a strict hygiene policy mean your room is always pristine and ready.</p>
+                    </article>
+                    <article class="promise-item">
+                        <h3>05</h3>
+                        <h4>Family-Friendly Hospitality</h4>
+                        <span aria-hidden="true"></span>
+                        <p>Urban Stay was built with families in mind. Spacious rooms, a quiet and respectful environment, and a team trained to anticipate the needs of families make every stay smooth and reassuring.</p>
+                    </article>
+                    <article class="promise-item">
+                        <h3>06</h3>
+                        <h4>Business-Ready Stays</h4>
+                        <span aria-hidden="true"></span>
+                        <p>Fast Wi-Fi, power backup, printing and scanning facilities, and a prime business-district location make Urban Stay the professional traveler's natural choice in Madurai. Work, rest, and repeat.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="facilities-section" id="facilities" aria-labelledby="facilities-title">
+            <div class="facilities-inner">
+                <div class="facilities-heading">
+                    <div>
+                        <p class="facilities-kicker"><span></span> Amenities</p>
+                        <h2 id="facilities-title">A Complete<br><em>Living Experience</em></h2>
+                    </div>
+                    <p class="facilities-intro">Every facility at Urban Stay is thoughtfully considered - not as an afterthought, but as part of how we believe a residential hotel should function. From your first step into reception to your last morning in your room, everything is in place.</p>
+                </div>
+
+                <div class="facilities-panel">
+                    <div class="facilities-panel-heading">
+                        <span>Urban Stay - Facilities Plan</span>
+                        <span>MDU - 625016</span>
+                    </div>
+                    <ul class="facilities-list">
+                        <li><span class="facility-icon" aria-hidden="true"></span><span><strong>Air-Conditioned Rooms</strong><small>All 27 rooms</small></span></li>
+                        <li><span class="facility-icon" aria-hidden="true"></span><span><strong>Free High-Speed Wi-Fi</strong><small>Entire property</small></span></li>
+                        <li><span class="facility-icon" aria-hidden="true"></span><span><strong>CCTV Surveillance</strong><small>24-hour monitoring</small></span></li>
+                        <li><span class="facility-icon" aria-hidden="true"></span><span><strong>Daily Housekeeping</strong><small>Every morning</small></span></li>
+                        <li><span class="facility-icon" aria-hidden="true"></span><span><strong>Modern Bathrooms</strong><small>Hot &amp; cold water</small></span></li>
+                        <li><span class="facility-icon" aria-hidden="true"></span><span><strong>LED TV</strong><small>Cable connection</small></span></li>
+                        <li><span class="facility-icon" aria-hidden="true"></span><span><strong>Power Backup</strong><small>Uninterrupted</small></span></li>
+                        <li><span class="facility-icon" aria-hidden="true"></span><span><strong>Ample Parking</strong><small>On-site</small></span></li>
+                        <li><span class="facility-icon" aria-hidden="true"></span><span><strong>24-Hour Front Desk</strong><small>Always staffed</small></span></li>
+                        <li><span class="facility-icon" aria-hidden="true"></span><span><strong>Comfortable Bedding</strong><small>Quality mattresses</small></span></li>
+                        <li><span class="facility-icon" aria-hidden="true"></span><span><strong>Laundry Service</strong><small>On request</small></span></li>
+                        <li><span class="facility-icon" aria-hidden="true"></span><span><strong>Printer &amp; Scanner</strong><small>Business facility</small></span></li>
+                    </ul>
+                    <p class="facilities-panel-footer">All facilities subject to availability <span>&middot;</span> Additional services on request</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="guidelines-section" aria-labelledby="guidelines-title">
+            <div class="guidelines-inner">
+                <p class="guidelines-kicker"><span></span> Guest charter <span></span></p>
+                <h2 id="guidelines-title">Guest <em>Guidelines</em></h2>
+                <p class="guidelines-intro">Our guidelines exist to ensure every guest - including you - enjoys a comfortable, safe, and respectful stay.</p>
+                <div class="guidelines-grid">
+                    <article class="guideline-item" id="guideline-timing">
+                        <p class="guideline-label">Timing</p>
+                        <h3>Check-In &amp; Check-Out</h3>
+                        <p>Check-in from 2:00 PM. Check-out by 12:00 Noon. Early check-in and late check-out are subject to availability and may incur additional charges.</p>
+                    </article>
+                    <article class="guideline-item" id="guideline-identity">
+                        <p class="guideline-label">Identity</p>
+                        <h3>Valid ID Proof</h3>
+                        <p>All guests must present a valid government-issued photo ID at check-in. Foreign nationals must provide a valid passport and visa.</p>
+                    </article>
+                    <article class="guideline-item" id="guideline-access">
+                        <p class="guideline-label">Access</p>
+                        <h3>Guest Registration</h3>
+                        <p>Only registered guests are permitted to stay in the room. Visitors are allowed only in designated areas and during permitted hours.</p>
+                    </article>
+                    <article class="guideline-item" id="guideline-billing">
+                        <p class="guideline-label">Billing</p>
+                        <h3>Payment Policy</h3>
+                        <p>Full payment or advance payment is required at check-in. All additional charges incurred during the stay must be settled before check-out.</p>
+                    </article>
+                    <article class="guideline-item" id="guideline-conduct">
+                        <p class="guideline-label">Conduct</p>
+                        <h3>No Smoking Policy</h3>
+                        <p>Smoking inside rooms and all indoor areas is strictly prohibited. The hotel maintains a clean, smoke-free environment throughout the property.</p>
+                    </article>
+                    <article class="guideline-item" id="guideline-booking">
+                        <p class="guideline-label">Booking</p>
+                        <h3>Cancellation &amp; Refund</h3>
+                        <p>Cancellation and refund policies are subject to the booking terms agreed at the time of reservation. Please confirm cancellation terms at booking.</p>
+                    </article>
+                </div>
+                <p class="guidelines-note">By checking into Urban Stay, the guest agrees to abide by all Terms &amp; Conditions of the hotel.</p>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+            <div class="gallery-inner">
+                <div class="gallery-heading">
+                    <div>
+                        <p class="gallery-kicker"><span></span> Visual story</p>
+                        <h2 id="gallery-title">A Glimpse<br><em>Inside Urban Stay</em></h2>
+                    </div>
+                    <p>Every space is designed with purpose. Every detail considered. Add your own images to bring this gallery to life.</p>
+                </div>
+                <div class="gallery-grid">
+                    <img class="gallery-photo gallery-dining" src="./images/dinning.jpg" alt="Bright Urban Stay dining room with tables and chairs">
+                    <img class="gallery-photo gallery-corridor" src="./images/rooms.jpg" alt="Clean guest room corridor">
+                    <img class="gallery-photo gallery-lounge" src="./images/dinning-2.jpg" alt="Guest dining area set for a meal">
+                    <img class="gallery-photo gallery-lift" src="./images/lift.jpg" alt="Hotel elevator lobby">
+                    <img class="gallery-photo gallery-cafe" src="./images/dinning-2.jpg" alt="Dining tables in the hotel restaurant">
+                    <img class="gallery-photo gallery-room-tall" src="./images/room-1.jpg" alt="Guest room with a colorful bed and window">
+                    <img class="gallery-photo gallery-room-detail" src="./images/bed-5.jpg" alt="Deluxe bed with warm orange accents">
+                    <img class="gallery-photo gallery-bathroom" src="./images/bathroom.jpg" alt="Clean modern guest bathroom">
+                    <img class="gallery-photo gallery-bed-detail" src="./images/bed-3.jpg" alt="Fresh white bedding with colorful accents">
+                    <img class="gallery-photo gallery-towel-detail" src="./images/bed-1.jpg" alt="Decorative towel arrangement on an orange bed runner">
+                </div>
+                <p class="gallery-note">Images to be added by the hotel team</p>
+            </div>
+        </section>
+
+        <section class="faq-section" id="faq" aria-labelledby="faq-title">
+            <div class="faq-inner">
+                <p class="faq-kicker"><span></span> Questions <span></span></p>
+                <h2 id="faq-title">Frequently <em>Asked</em></h2>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>What are the check-in and check-out times?<span class="faq-toggle" aria-hidden="true"></span></summary>
+                        <p>Check-in starts at 2:00 PM and check-out is by 12:00 Noon. Early check-in and late check-out depend on availability and may incur an additional charge.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Is parking available at Urban Stay?<span class="faq-toggle" aria-hidden="true"></span></summary>
+                        <p>On-site parking is available for guests, subject to availability. Please contact the front desk if you need assistance.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Is Wi-Fi complimentary for all guests?<span class="faq-toggle" aria-hidden="true"></span></summary>
+                        <p>Yes. Complimentary Wi-Fi is available throughout the property.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>What documents are required at check-in?<span class="faq-toggle" aria-hidden="true"></span></summary>
+                        <p>All guests must present a valid government-issued photo ID. Foreign nationals must also provide a valid passport and visa.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Are external visitors allowed inside rooms?<span class="faq-toggle" aria-hidden="true"></span></summary>
+                        <p>Only registered guests may stay in rooms. Visitors are permitted in designated areas and during approved visiting hours.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>What is the cancellation policy?<span class="faq-toggle" aria-hidden="true"></span></summary>
+                        <p>Cancellation and refund terms depend on the booking conditions agreed at reservation. Please check your booking confirmation or contact the hotel for details.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="contact-map">
+                <iframe title="Map showing Urban Stay in Madurai" data-contact-src="mapEmbedUrl" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="map-card">
+                    <h3>Find Us in Madurai</h3>
+                    <p data-contact="address"></p>
+                    <a data-contact-href="directionsUrl" target="_blank" rel="noreferrer">Get directions <span aria-hidden="true">&rarr;</span></a>
+                </div>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-details">
+                    <p class="contact-kicker"><span></span> Get in touch</p>
+                    <h2 id="contact-title">Reserve Your<br><em>Room Today</em></h2>
+
+                    <dl class="contact-list">
+                        <div class="contact-row">
+                            <dt class="contact-icon" aria-hidden="true">⌖</dt>
+                            <dd><span>Address</span><p data-contact="address"></p></dd>
+                        </div>
+                        <div class="contact-row">
+                            <dt class="contact-icon" aria-hidden="true">☎</dt>
+                            <dd><span>Phone</span><a data-contact="phone" data-contact-href="phoneUrl"></a></dd>
+                        </div>
+                        <div class="contact-row">
+                            <dt class="contact-icon whatsapp-icon" aria-hidden="true">◉</dt>
+                            <dd><span>WhatsApp</span><a class="whatsapp-link" data-contact="whatsapp" data-contact-href="whatsappUrl"></a></dd>
+                        </div>
+                        <div class="contact-row">
+                            <dt class="contact-icon" aria-hidden="true">◷</dt>
+                            <dd><span>Availability</span><p data-contact="availability">24-hour front desk - Walk-ins welcome</p></dd>
+                        </div>
+                    </dl>
+
+                    <a class="whatsapp-button" data-contact-href="whatsappUrl">Reserve via WhatsApp</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-cta" aria-labelledby="final-cta-title">
+            <p class="final-cta-kicker"><span></span> Urban Stay <span class="cta-dot">&middot;</span> Madurai <span></span></p>
+            <h2 id="final-cta-title">Your comfortable stay <em>in Madurai</em><br>begins at Urban Stay.</h2>
+            <p class="final-cta-copy">27 rooms. Three floors. One address in the heart of the city. Walk in, check in, and let Madurai welcome you.</p>
+            <div class="final-cta-actions">
+                <a data-contact-href="whatsappUrl">Reserve your room</a>
+                <a data-contact-href="phoneUrl">Call us directly</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <a href="#home" aria-label="Urban Stay home"><img src="./images/logo.jpg" alt="Urban Stay"></a>
+                <p>A residential hotel in the heart of Madurai - combining South Indian warmth with modern comfort.</p>
+                <a class="footer-whatsapp" data-contact-href="whatsappUrl" aria-label="Contact Urban Stay on WhatsApp">◉</a>
+            </div>
+
+            <nav class="footer-column" aria-label="Quick links">
+                <h2>Quick links</h2>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#rooms">Rooms</a>
+                <a href="#facilities">Facilities</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <nav class="footer-column" aria-label="Guest guidelines">
+                <h2>Guest guidelines</h2>
+                <a href="#guideline-timing">Check-in &amp; Check-out</a>
+                <a href="#guideline-access">Guest Registration</a>
+                <a href="#guideline-billing">Payment Policy</a>
+                <a href="#guideline-conduct">Smoking Policy</a>
+                <a href="#guideline-booking">Cancellation Policy</a>
+            </nav>
+
+            <div class="footer-column footer-contact">
+                <h2>Contact</h2>
+                <p data-contact="address"></p>
+                <a data-contact="phone" data-contact-href="phoneUrl"></a>
+                <span data-contact="support">24 / 7 Support</span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <time id="current-year"></time> Urban Stay Residential Hotel. All rights reserved.</p>
+            <p>Madurai, Tamil Nadu, India</p>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
 </body>
 </html>
