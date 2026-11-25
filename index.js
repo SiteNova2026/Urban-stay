@@ -1,4 +1,4 @@
-
+console.log("logging page...");
 const menuToggle = document.querySelector(".menu-toggle");
 const primaryNavigation = document.querySelector("#primary-navigation");
 const siteHeader = document.querySelector(".site-header");
