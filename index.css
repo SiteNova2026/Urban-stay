@@ -1661,12 +1661,6 @@ svg {
         padding-block: 44px 72px;
     }
 
-    .entrance::after {
-        background: linear-gradient(90deg,
-                color-mix(in srgb, #1e2638 92%, var(--brown-hover) 8%),
-                color-mix(in srgb, #1e2638 72%, var(--brown-hover) 28%));
-    }
-
     .our-story {
         padding: 44px 24px 36px;
     }
