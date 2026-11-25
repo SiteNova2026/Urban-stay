@@ -7,14 +7,15 @@
 :root {
     color-scheme: light;
     --ink: #202642;
-    --brown: #B78320;
-    --brown-pale: #EAD7AE;
+    --brown: lab(58.42% 11.55 56.73);
+    --brown-pale: rgb(234, 215, 174);
     --brown-hover: #9c6b1a;
     --sand: #f8e8b8;
     --font-body: "Outfit", sans-serif;
     --font-body-size: 0.875rem;
     --ink-strong: #202d50;
     --white: #fff;
+    --black: #000000;
     --paper: #faf8f3;
     --cream: #f5f0e7;
     --cream-accent: #fff1c7;
@@ -35,6 +36,7 @@
     --font15: 1.0375rem;
     --font16: 1rem;
     --font17: clamp(1.0375rem, 1.2vw, 1.0625rem);
+    --font20: clamp(1.25rem, 1.5vw, 1.3125rem);
     --font24: clamp(1.375rem, 2vw, 1.5rem);
     --font25: clamp(1.375rem, 2.2vw, 1.5625rem);
     --font27: clamp(1.5rem, 2.4vw, 1.6875rem);
@@ -201,7 +203,11 @@ a {
 .entrance::after {
     position: absolute;
     z-index: -1;
-    background: linear-gradient(90deg, rgb(27 37 63 / 94%) 0%, rgb(27 37 63 / 82%) 37%, rgb(27 37 63 / 44%) 70%, rgb(27 37 63 / 12%) 100%);
+background: linear-gradient(90deg,
+  rgb(245 230 204 / 94%) 0%,
+  rgb(245 230 204 / 82%) 37%,
+  rgb(245 230 204 / 44%) 70%,
+  rgb(245 230 204 / 12%) 100%);
     content: "";
     inset: 0;
 }
@@ -231,11 +237,18 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: var(--brown);
+    color: var(--white);
     font-size: var(--font10-5);
     font-weight: 600;
     letter-spacing: 0.24em;
     text-transform: uppercase;
+    text-shadow: -2px 3px 14px rgba(0,0,0,0.49);
+}
+.entrance-actions-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    gap: 12px;
 }
 
 .entrance-kicker > span:first-child {
@@ -255,6 +268,7 @@ a {
     font-weight: 400;
     line-height: 0.94;
     text-transform: uppercase;
+    text-shadow: 0 2px 2px rgb(0 0 0 / 40%);
 }
 
 .entrance h1 em {
@@ -267,16 +281,17 @@ a {
 .entrance-tagline {
     margin-top: 17px;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: var(--font17);
+    font-size: var(--font20);
     font-style: italic;
+    text-shadow: -2px 3px 14px rgba(0,0,0,0.49);
 }
 
 .entrance-description {
     max-width: 390px;
     margin-top: 26px;
-    color: rgb(255 255 255 / 82%);
-    font-size: var(--font11-5);
+    font-size: var(--font13);
     line-height: 1.75;
+    text-shadow: -2px 3px 14px rgba(0,0,0,0.49);
 }
 
 .entrance-actions {
@@ -303,7 +318,7 @@ a {
 
 .primary-action {
     background: var(--brown);
-    color: #182000;
+    color: var(--white);
     font-weight: 700;
 }
 
@@ -339,10 +354,11 @@ a {
     padding: 10px 14px;
     backdrop-filter: blur(10px);
     border: 1px solid rgb(255 255 255 / 20%);
+    background: hsla(46, 74%, 67%, 0.338);
 }
 
 .availability span {
-    color: rgb(255 255 255 / 60%);
+    color: var(--brown);
     font-size: var(--font8);
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -1056,7 +1072,7 @@ a {
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    grid-template-rows: repeat(4, 120px);
+    grid-template-rows: repeat(4, 150px);
     gap: 5px;
 }
 
@@ -1318,7 +1334,7 @@ a {
     justify-content: center;
     margin-top: 28px;
     padding: 0 22px;
-    background: var(--brown-);
+    background: var(--brown);
     color: var(--white);
     font-size: var(--font10-5);
     font-weight: 700;
@@ -1591,7 +1607,9 @@ a {
     }
 
     .entrance::after {
-        background: linear-gradient(90deg, rgb(27 37 63 / 92%), rgb(27 37 63 / 68%));
+        background: linear-gradient(90deg,
+            color-mix(in srgb, #1e2638 92%, var(--brown-hover) 8%),
+            color-mix(in srgb, #1e2638 72%, var(--brown-hover) 28%));
     }
 
     .our-story {
