@@ -194,7 +194,8 @@ a {
 }
 
 .entrance-inner {
-    width: min(100% - 48px, 904px);
+    width: 100%;
+    max-width: 1200px;
     margin-inline: auto;
     padding-block: 40px 68px;
 }
@@ -337,7 +338,8 @@ a {
 
 .story-layout {
     display: grid;
-    width: min(100%, 900px);
+    width: 100%;
+    max-width: 1200px;
     grid-template-columns: 1.08fr 1fr;
     align-items: center;
     gap: 72px;
@@ -488,7 +490,8 @@ a {
 }
 
 .rooms-inner {
-    width: min(100%, 900px);
+        width: 100%;
+    max-width: 1200px;
     margin-inline: auto;
 }
 
@@ -635,7 +638,8 @@ a {
 }
 
 .promise-inner {
-    width: min(100%, 900px);
+        width: 100%;
+    max-width: 1200px;
     margin-inline: auto;
 }
 
@@ -716,7 +720,8 @@ a {
 }
 
 .facilities-inner {
-    width: min(100%, 900px);
+        width: 100%;
+    max-width: 1200px;
     margin-inline: auto;
 }
 
@@ -866,7 +871,8 @@ a {
 }
 
 .guidelines-inner {
-    width: min(100%, 900px);
+        width: 100%;
+    max-width: 1200px;
     margin-inline: auto;
     text-align: center;
 }
@@ -977,7 +983,8 @@ a {
 }
 
 .gallery-inner {
-    width: min(100%, 900px);
+        width: 100%;
+    max-width: 1200px;
     margin-inline: auto;
 }
 
@@ -1396,7 +1403,8 @@ a {
 
 .footer-main {
     display: grid;
-    width: min(100%, 900px);
+        width: 100%;
+    max-width: 1200px;
     grid-template-columns: 1.7fr 1.25fr 1.55fr 1.4fr;
     gap: 34px;
     margin-inline: auto;
