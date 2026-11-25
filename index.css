@@ -10,7 +10,7 @@
     --lime: #b5d900;
     --sand: #f8e8b8;
     --font-body: "Outfit", sans-serif;
-    --font-body-size: 14px;
+    --font-body-size: 0.875rem;
     --ink-strong: #202d50;
     --white: #fff;
     --paper: #faf8f3;
@@ -25,6 +25,30 @@
     --lime-deep: #829d00;
     --lime-hover: #a6c500;
     --lime-pale: #f7f8e7;
+    --font6: 0.4875rem;
+    --font8: 0.5925rem;
+    --font9: 0.655rem;
+    --font10-5: 0.75875rem;
+    --font11: 0.8rem;
+    --font11-5: 0.78125rem;
+    --font13: 0.975rem;
+    --font14: 0.975rem;
+    --font15: 1.0375rem;
+    --font16: 1rem;
+    --font17: clamp(1.0375rem, 1.2vw, 1.0625rem);
+    --font24: clamp(1.375rem, 2vw, 1.5rem);
+    --font25: clamp(1.375rem, 2.2vw, 1.5625rem);
+    --font27: clamp(1.5rem, 2.4vw, 1.6875rem);
+    --font30: clamp(1.75rem, 2.5vw, 1.875rem);
+    --font31: clamp(1.75rem, 2.7vw, 1.9375rem);
+    --font32: clamp(1.75rem, 2.8vw, 2rem);
+    --font34: clamp(1.875rem, 3vw, 2.125rem);
+    --font36: clamp(2rem, 3.2vw, 2.25rem);
+    --font38: clamp(2.125rem, 3.5vw, 2.375rem);
+    --font40: clamp(2.25rem, 3.6vw, 2.5rem);
+    --font42: clamp(2.375rem, 4vw, 2.625rem);
+    --font64: clamp(4rem, 8vw, 4.875rem);
+
 }
 
 body {
@@ -57,7 +81,7 @@ a {
     min-height: 24px;
     background: var(--sand);
     color: #665b45;
-    font-size: 11.5px;
+    font-size: var(--font11-5);
 }
 
 .utility-inner,
@@ -126,7 +150,7 @@ a {
 .nav-links a {
     display: block;
     padding-block: 12px;
-    font-size: 11.5px;
+    font-size: var(--font11-5);
     font-weight: 500;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -149,7 +173,7 @@ a {
     flex: 0 0 auto;
     background: var(--lime);
     color: #172000;
-    font-size: 11.5px;
+    font-size: var(--font11-5);
     font-weight: 700;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -209,7 +233,7 @@ a {
     align-items: center;
     gap: 10px;
     color: var(--lime);
-    font-size: 10.5px;
+    font-size: var(--font10-5);
     font-weight: 600;
     letter-spacing: 0.24em;
     text-transform: uppercase;
@@ -228,7 +252,7 @@ a {
 .entrance h1 {
     margin-top: 27px;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(66px, 7vw, 78px);
+    font-size: var(--font64);
     font-weight: 400;
     line-height: 0.94;
     text-transform: uppercase;
@@ -244,7 +268,7 @@ a {
 .entrance-tagline {
     margin-top: 17px;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 17px;
+    font-size: var(--font17);
     font-style: italic;
 }
 
@@ -252,7 +276,7 @@ a {
     max-width: 390px;
     margin-top: 26px;
     color: rgb(255 255 255 / 82%);
-    font-size: 11.5px;
+    font-size: var(--font11-5);
     line-height: 1.75;
 }
 
@@ -271,7 +295,7 @@ a {
     align-items: center;
     justify-content: center;
     padding: 0 18px;
-    font-size: 10.5px;
+    font-size: var(--font10-5);
     letter-spacing: 0.12em;
     text-align: center;
     text-transform: uppercase;
@@ -320,13 +344,13 @@ a {
 
 .availability span {
     color: rgb(255 255 255 / 60%);
-    font-size: 8px;
+    font-size: var(--font8);
     letter-spacing: 0.18em;
     text-transform: uppercase;
 }
 
 .availability strong {
-    font-size: 11px;
+    font-size: var(--font11);
     font-weight: 600;
 }
 
@@ -387,7 +411,7 @@ a {
     align-items: center;
     gap: 9px;
     margin-bottom: 23px;
-    font-size: 10px;
+    font-size: var(--font10-5);
     letter-spacing: 0.22em;
     text-transform: uppercase;
 }
@@ -400,7 +424,7 @@ a {
 
 .story-content h2 {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(32px, 4vw, 39px);
+    font-size: var(--font32);
     font-weight: 400;
     line-height: 1.28;
 }
@@ -420,7 +444,7 @@ a {
 .story-content > p:not(.story-kicker) {
     margin-top: 13px;
     color: #39425a;
-    font-size: 11.5px;
+    font-size: var(--font11-5);
     line-height: 1.7;
 }
 
@@ -436,7 +460,7 @@ a {
     position: relative;
     padding-left: 11px;
     color: #4d566c;
-    font-size: 11.5px;
+    font-size: var(--font11-5);
 }
 
 .story-features li::before {
@@ -473,12 +497,12 @@ a {
 
 .story-stats dt {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 14px;
+    font-size: var(--font14);
 }
 
 .story-stats dd {
     color: #7e8799;
-    font-size: 9px;
+    font-size: var(--font9);
     letter-spacing: 0.12em;
     text-transform: uppercase;
 }
@@ -508,7 +532,7 @@ a {
     align-items: center;
     gap: 9px;
     margin-bottom: 17px;
-    font-size: 10px;
+    font-size: var(--font10-5);
     letter-spacing: 0.22em;
     text-transform: uppercase;
 }
@@ -521,7 +545,7 @@ a {
 
 .rooms-heading h2 {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 40px;
+    font-size: var(--font40);
     font-weight: 400;
     line-height: 1.25;
 }
@@ -534,7 +558,7 @@ a {
     width: 250px;
     margin-bottom: 2px;
     color: var(--muted-text);
-    font-size: 11.5px;
+    font-size: var(--font11-5);
     line-height: 1.7;
     text-align: right;
 }
@@ -565,7 +589,7 @@ a {
 
 .room-meta {
     color: #9ab800;
-    font-size: 10px;
+    font-size: var(--font10-5);
     font-weight: 600;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -578,7 +602,7 @@ a {
 .room-details h3 {
     margin-top: 14px;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 30px;
+    font-size: var(--font30);
     font-weight: 400;
 }
 
@@ -592,7 +616,7 @@ a {
 
 .room-description {
     color: #414a61;
-    font-size: 11.5px;
+    font-size: var(--font11-5);
     line-height: 1.75;
 }
 
@@ -608,7 +632,7 @@ a {
     position: relative;
     padding-left: 10px;
     color: #566078;
-    font-size: 10.5px;
+    font-size: var(--font10-5);
 }
 
 .room-amenities li::before {
@@ -628,7 +652,7 @@ a {
     border-left: 1px solid var(--lime);
     background: #E3D5B866;
     color: var(--muted-text);
-    font-size: 10px;
+    font-size: var(--font10-5);
 }
 
 .promise-section {
@@ -648,7 +672,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    font-size: 10px;
+    font-size: var(--font10-5);
     letter-spacing: 0.22em;
     text-transform: uppercase;
 }
@@ -662,7 +686,7 @@ a {
 .promise-inner > h2 {
     margin-block: 18px 27px;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 40px;
+    font-size: var(--font40);
     font-weight: 400;
     text-align: center;
 }
@@ -687,7 +711,7 @@ a {
 
 .promise-item h3 {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 24px;
+    font-size: var(--font24);
     font-weight: 600;
 }
 
@@ -695,7 +719,7 @@ a {
     margin-top: 21px;
     color: #46516a;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 17px;
+    font-size: var(--font17);
     font-weight: 400;
 }
 
@@ -709,7 +733,7 @@ a {
 
 .promise-item p {
     color: var(--subtle-text);
-    font-size: 10.5px;
+    font-size: var(--font10-5);
     line-height: 1.8;
 }
 
@@ -738,7 +762,7 @@ a {
     align-items: center;
     gap: 9px;
     margin-bottom: 17px;
-    font-size: 10px;
+    font-size: var(--font10-5);
     letter-spacing: 0.22em;
     text-transform: uppercase;
 }
@@ -751,7 +775,7 @@ a {
 
 .facilities-heading h2 {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 40px;
+    font-size: var(--font40);
     font-weight: 400;
     line-height: 1.3;
 }
@@ -763,7 +787,7 @@ a {
 .facilities-intro {
     padding-bottom: 5px;
     color: #46516a;
-    font-size: 11.5px;
+    font-size: var(--font11-5);
     line-height: 1.85;
 }
 
@@ -804,7 +828,7 @@ a {
     min-height: 42px;
     padding-inline: 24px;
     color: var(--faint-text);
-    font-size: 9px;
+    font-size: var(--font9);
     letter-spacing: 0.2em;
     text-transform: uppercase;
 }
@@ -849,13 +873,13 @@ a {
 
 .facilities-list strong {
     color: #273654;
-    font-size: 10.5px;
+    font-size: var(--font10-5);
     font-weight: 500;
 }
 
 .facilities-list small {
     color: #98a1b2;
-    font-size: 10px;
+    font-size: var(--font10-5);
 }
 
 .facilities-panel-footer {
@@ -883,7 +907,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    font-size: 10px;
+    font-size: var(--font10-5);
     letter-spacing: 0.22em;
     text-transform: uppercase;
 }
@@ -899,7 +923,7 @@ a {
 .faq-inner > h2 {
     margin-top: 17px;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 38px;
+    font-size: var(--font38);
     font-weight: 400;
 }
 
@@ -912,7 +936,7 @@ a {
     max-width: 420px;
     margin: 16px auto 44px;
     color: #667087;
-    font-size: 11.5px;
+    font-size: var(--font11-5);
     line-height: 1.7;
 }
 
@@ -937,7 +961,7 @@ a {
     padding: 5px 9px;
     background: var(--lime-pale);
     color: #a0b800;
-    font-size: 9px;
+    font-size: var(--font9);
     letter-spacing: 0.2em;
     text-transform: uppercase;
 }
@@ -945,7 +969,7 @@ a {
 .guideline-item h3 {
     margin-top: 16px;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 16px;
+    font-size: var(--font16);
     font-weight: 400;
 }
 
@@ -961,7 +985,7 @@ a {
 .guideline-item > p:last-child {
     margin-top: 12px;
     color: #737d91;
-    font-size: 10.5px;
+    font-size: var(--font10-5);
     line-height: 1.75;
 }
 
@@ -973,7 +997,7 @@ a {
     border: 1px solid var(--line-warm);
     background: var(--white);
     color: var(--subtle-text);
-    font-size: 10px;
+    font-size: var(--font10-5);
 }
 
 .gallery-section {
@@ -1001,7 +1025,7 @@ a {
     align-items: center;
     gap: 9px;
     margin-bottom: 16px;
-    font-size: 10px;
+    font-size: var(--font10-5);
     letter-spacing: 0.22em;
     text-transform: uppercase;
 }
@@ -1014,7 +1038,7 @@ a {
 
 .gallery-heading h2 {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 38px;
+    font-size: var(--font38);
     font-weight: 400;
     line-height: 1.25;
 }
@@ -1027,7 +1051,7 @@ a {
     width: 220px;
     margin-bottom: 4px;
     color: #687187;
-    font-size: 11.5px;
+    font-size: var(--font11-5);
     line-height: 1.7;
     text-align: right;
 }
@@ -1061,7 +1085,7 @@ a {
 .gallery-note {
     margin-top: 18px;
     color: var(--faint-text);
-    font-size: 9px;
+    font-size: var(--font9);
     letter-spacing: 0.2em;
     text-align: center;
     text-transform: uppercase;
@@ -1099,7 +1123,7 @@ a {
     gap: 20px;
     cursor: pointer;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 14px;
+    font-size: var(--font14);
     list-style: none;
 }
 
@@ -1138,7 +1162,7 @@ a {
     max-width: 540px;
     padding: 0 32px 18px 0;
     color: #6d778c;
-    font-size: 11.5px;
+    font-size: var(--font11-5);
     line-height: 1.8;
 }
 
@@ -1177,14 +1201,14 @@ a {
 
 .map-card h3 {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 16px;
+    font-size: var(--font16);
     font-weight: 400;
 }
 
 .map-card p {
     margin-top: 12px;
     color: #778097;
-    font-size: 10.5px;
+    font-size: var(--font10-5);
     line-height: 1.8;
 }
 
@@ -1193,7 +1217,7 @@ a {
     align-items: center;
     gap: 8px;
     margin-top: 16px;
-    font-size: 10px;
+    font-size: var(--font10-5);
     font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -1213,7 +1237,7 @@ a {
     display: flex;
     align-items: center;
     gap: 9px;
-    font-size: 10px;
+    font-size: var(--font10-5);
     letter-spacing: 0.22em;
     text-transform: uppercase;
 }
@@ -1227,7 +1251,7 @@ a {
 .contact-content h2 {
     margin-top: 22px;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 34px;
+    font-size: var(--font34);
     font-weight: 400;
     line-height: 1.3;
 }
@@ -1257,7 +1281,7 @@ a {
     border: 1px solid var(--line-warm);
     color: #253756;
     font-family: Arial, sans-serif;
-    font-size: 13px;
+    font-size: var(--font13);
     font-style: normal;
 }
 
@@ -1274,7 +1298,7 @@ a {
 .contact-row dd > span {
     display: block;
     color: var(--faint-text);
-    font-size: 9px;
+    font-size: var(--font9);
     letter-spacing: 0.2em;
     text-transform: uppercase;
 }
@@ -1282,7 +1306,7 @@ a {
 .contact-row dd > p,
 .contact-row dd > a {
     color: #35415a;
-    font-size: 10.5px;
+    font-size: var(--font10-5);
     line-height: 1.65;
 }
 
@@ -1299,7 +1323,7 @@ a {
     padding: 0 22px;
     background: var(--lime);
     color: #1d2700;
-    font-size: 10.5px;
+    font-size: var(--font10-5);
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -1324,7 +1348,7 @@ a {
     justify-content: center;
     gap: 10px;
     color: #273654;
-    font-size: 10px;
+    font-size: var(--font10-5);
     letter-spacing: 0.22em;
     text-transform: uppercase;
 }
@@ -1338,7 +1362,7 @@ a {
 .final-cta h2 {
     margin-top: 26px;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 42px;
+    font-size: var(--font42);
     font-weight: 400;
     line-height: 1.3;
 }
@@ -1349,7 +1373,7 @@ a {
 
 .final-cta-copy {
     margin-top: 22px;
-    font-size: 11.5px;
+    font-size: var(--font11-5);
     line-height: 1.7;
 }
 
@@ -1370,7 +1394,7 @@ a {
     padding-inline: 16px;
     border: 1px solid #a99b7e;
     color: #483222;
-    font-size: 10px;
+    font-size: var(--font10-5);
     letter-spacing: 0.12em;
     text-transform: uppercase;
     transition: background-color 160ms ease, color 160ms ease;
@@ -1431,7 +1455,7 @@ a {
     max-width: 200px;
     margin-top: 16px;
     color: #788197;
-    font-size: 10.5px;
+    font-size: var(--font10-5);
     line-height: 1.8;
 }
 
@@ -1443,7 +1467,7 @@ a {
     margin-top: 14px;
     border: 1px solid #b9aa80;
     color: #69748a;
-    font-size: 15px;
+    font-size: var(--font15);
 }
 
 .footer-column {
@@ -1452,13 +1476,13 @@ a {
     align-items: flex-start;
     gap: 10px;
     padding-top: 4px;
-    font-size: 10.5px;
+    font-size: var(--font10-5);
 }
 
 .footer-column h2 {
     margin-bottom: 7px;
     color: #273654;
-    font-size: 10px;
+    font-size: var(--font10-5);
     font-weight: 500;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -1476,7 +1500,7 @@ a {
 
 .footer-contact > span {
     color: #8c96a7;
-    font-size: 9px;
+    font-size: var(--font10-5);
     letter-spacing: 0.16em;
     text-transform: uppercase;
 }
@@ -1491,7 +1515,7 @@ a {
     margin-inline: auto;
     border-top: 1px solid #eadb9f;
     color: var(--subtle-text);
-    font-size: 10px;
+    font-size: var(--font10-5);
 }
 
 @media (max-width: 760px) {
@@ -1528,7 +1552,7 @@ a {
         background: var(--white);
         color: var(--ink);
         font: inherit;
-        font-size: 11.5px;
+        font-size: var(--font11-5);
         cursor: pointer;
     }
 
@@ -1652,7 +1676,7 @@ a {
     }
 
     .final-cta h2 {
-        font-size: 36px;
+        font-size: var(--font36);
     }
 
     .guidelines-grid {
@@ -1706,7 +1730,7 @@ a {
 
     .book-button {
         min-width: 82px;
-        font-size: 10.5px;
+        font-size: var(--font10-5);
     }
 
     .entrance-inner {
@@ -1715,16 +1739,16 @@ a {
     }
 
     .entrance h1 {
-        font-size: 64px;
+        font-size: var(--font64);
     }
 
     .entrance-tagline {
-        font-size: 15px;
+        font-size: var(--font15);
     }
 
     .entrance-description {
         margin-top: 20px;
-        font-size: 11.5px;
+        font-size: var(--font11-5);
     }
 
     .availability {
@@ -1751,7 +1775,7 @@ a {
     }
 
     .story-content h2 {
-        font-size: 32px;
+        font-size: var(--font32);
     }
 
     .story-stats > div {
@@ -1759,7 +1783,7 @@ a {
     }
 
     .story-stats dd {
-        font-size: 6px;
+        font-size: var(--font6);
     }
 
     .rooms-section {
@@ -1773,7 +1797,7 @@ a {
     }
 
     .rooms-heading h2 {
-        font-size: 34px;
+        font-size: var(--font34);
     }
 
     .rooms-intro {
@@ -1791,7 +1815,7 @@ a {
     }
 
     .room-details h3 {
-        font-size: 27px;
+        font-size: var(--font27);
     }
 
     .promise-section {
@@ -1799,7 +1823,7 @@ a {
     }
 
     .promise-inner > h2 {
-        font-size: 32px;
+        font-size: var(--font32);
     }
 
     .promise-grid {
@@ -1822,7 +1846,7 @@ a {
     }
 
     .facilities-heading h2 {
-        font-size: 34px;
+        font-size: var(--font34);
     }
 
     .facilities-list {
@@ -1841,7 +1865,7 @@ a {
     .facilities-panel-heading,
     .facilities-panel-footer {
         padding-inline: 14px;
-        font-size: 6px;
+        font-size: var(--font6);
         letter-spacing: 0.12em;
     }
 
@@ -1855,7 +1879,7 @@ a {
     }
 
     .contact-content h2 {
-        font-size: 31px;
+        font-size: var(--font31);
     }
 
     .final-cta {
@@ -1863,7 +1887,7 @@ a {
     }
 
     .final-cta h2 {
-        font-size: 25px;
+        font-size: var(--font25);
     }
 
     .final-cta-copy {
@@ -1902,7 +1926,7 @@ a {
     }
 
     .gallery-heading h2 {
-        font-size: 32px;
+        font-size: var(--font32);
     }
 
     .gallery-grid {
