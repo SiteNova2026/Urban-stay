@@ -49,7 +49,6 @@
     --font40: clamp(2.25rem, 3.6vw, 2.5rem);
     --font42: clamp(2.375rem, 4vw, 2.625rem);
     --font64: clamp(4rem, 8vw, 4.875rem);
-
 }
 
 body {
@@ -217,29 +216,16 @@ a {
     isolation: isolate;
     background: rgb(245 230 204 / 94%);
     color: var(--white);
-}
-
-.entrance::after {
-    position: absolute;
-    z-index: -1;
-    content: "";
-    inset: 0;
-}
-
-.entrance-image {
-    position: absolute;
-    z-index: -2;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 64%;
-    inset: 0;
+    background: url(./images/urban_stay_entrance_two.png);
+    @media (min-width: 768px) {
+        padding: 40px 24px 30px;
+    }
 }
 
 .entrance-inner {
     width: 100%;
     max-width: 1200px;
-    margin-inline: auto;
+    margin: auto;
     padding-block: 40px 68px;
 }
 
@@ -262,14 +248,14 @@ a {
 .entrance-actions-wrapper {
     display: flex;
     flex-direction: column;
-    width: 330px;
+    width: 350px;
     gap: 12px;
 }
 
-.entrance-kicker>span:first-child {
+.entrance-kicker>span:first-child, .entrance-kicker>span:last-child {
     width: 30px;
     height: 1px;
-    background: var(--brown);
+    background: gold;
 }
 
 .kicker-dot {
@@ -287,7 +273,7 @@ a {
 }
 
 .entrance h1 em {
-    color: var(--brown);
+    color: gold;
     font-size: 0.96em;
     font-weight: 400;
     text-transform: none;
@@ -329,54 +315,48 @@ a {
     text-align: center;
     text-transform: uppercase;
     transition: background-color 160ms ease, border-color 160ms ease;
+    border-radius: 8px;
 }
 
 .primary-action {
-    background: var(--brown);
+    background: gold;
     color: var(--white);
     font-weight: 700;
 }
 
-.primary-action:hover,
-.primary-action:focus-visible {
-    background: var(--brown-hover);
-}
-
 .secondary-action {
-    border: 1px solid rgb(255 255 255 / 46%);
+    border: 3px solid  gold;
     color: var(--white);
-}
-
-.secondary-action:hover,
-.secondary-action:focus-visible {
-    border-color: var(--white);
-    background: rgb(255 255 255 / 12%);
 }
 
 .availability {
     display: inline-grid;
     grid-template-columns: repeat(3, minmax(85px, 1fr));
     margin-top: 33px;
-    border: 1px solid rgb(255 255 255 / 24%);
-    background: rgb(255 255 255 / 7%);
 }
 
-.availability>div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-    padding: 10px 14px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgb(255 255 255 / 20%);
-    background: hsla(46, 74%, 67%, 0.338);
+.availability {
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        padding: 10px 14px;
+    }
+
+    div:first-child,
+    div:nth-child(2) {
+        border-right: 3px solid gold;
+    }
+
 }
 
 .availability span {
-    color: var(--brown);
-    font-size: var(--font8);
-    letter-spacing: 0.18em;
+    color: var(--brown-pale);
+    font-size: var(--font9);
+    letter-spacing: 0.19em;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .availability strong {
