@@ -31,6 +31,7 @@
     --font10-5: 0.75875rem;
     --font11: 0.8rem;
     --font11-5: 0.78125rem;
+    --font12:0.875rem
     --font13: 0.975rem;
     --font14: 0.975rem;
     --font15: 1.0375rem;
@@ -239,11 +240,14 @@ a {
     align-items: center;
     gap: 10px;
     color: gold;
-    font-size: var(--font10-5);
+    font-size: var(--font12);
     font-weight: 600;
     letter-spacing: 0.24em;
     text-transform: uppercase;
     text-shadow: -2px 3px 14px rgba(0, 0, 0, 0.49);
+    @media (max-width: 768px) {
+         font-size: var(--font10-5);
+    }
 }
 
 .entrance-actions-wrapper {
