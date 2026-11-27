@@ -217,6 +217,7 @@ a {
     background: rgb(245 230 204 / 94%);
     color: var(--white);
     background: url(./images/urban_stay_entrance_two.png);
+
     @media (min-width: 768px) {
         padding: 40px 24px 30px;
     }
@@ -237,7 +238,7 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: var(--white);
+    color: gold;
     font-size: var(--font10-5);
     font-weight: 600;
     letter-spacing: 0.24em;
@@ -252,10 +253,11 @@ a {
     gap: 12px;
 }
 
-.entrance-kicker>span:first-child, .entrance-kicker>span:last-child {
+.entrance-kicker>span:first-child,
+.entrance-kicker>span:last-child {
     width: 30px;
     height: 1px;
-    background: gold;
+    background: white;
 }
 
 .kicker-dot {
@@ -325,43 +327,74 @@ a {
 }
 
 .secondary-action {
-    border: 3px solid  gold;
+    border: 3px solid gold;
     color: var(--white);
 }
 
 .availability {
-    display: inline-grid;
-    grid-template-columns: repeat(3, minmax(85px, 1fr));
-    margin-top: 33px;
+    right: max(24px, calc((100% - 1200px) / 2));
+    bottom: 30px;
+    width: min(760px, calc(100% - 48px));
+    min-height: 132px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: center;
+    padding: 20px 26px;
+    border: 1px solid rgb(255 255 255 / 24%);
+    border-radius: 8px;
+    background: rgb(76 31 24 / 82%);
+    box-shadow: 0 18px 36px rgb(30 11 7 / 28%);
+    backdrop-filter: blur(8px);
 }
 
-.availability {
-    div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 5px;
-        padding: 10px 14px;
-    }
+.availability-item {
+    min-width: 0;
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 18px;
+}
 
-    div:first-child,
-    div:nth-child(2) {
-        border-right: 3px solid gold;
-    }
+.availability-item:first-child {
+    padding-left: 8px;
+}
 
+.availability-item:not(:last-child) {
+    border-right: 1px solid rgb(255 255 255 / 18%);
+}
+
+.availability-item svg {
+    width: 22px;
+    height: 22px;
+    flex: 0 0 auto;
+    fill: none;
+    stroke: gold;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.availability-item p {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 7px;
 }
 
 .availability span {
-    color: var(--brown-pale);
+    color: gold;
     font-size: var(--font9);
     letter-spacing: 0.19em;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .availability strong {
-    font-size: var(--font11);
+    color: var(--white);
+    font-size: var(--font9);
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .our-story {
@@ -1797,12 +1830,33 @@ svg {
     }
 
     .availability {
+        position: relative;
+        right: auto;
+        bottom: auto;
         width: 100%;
+        min-height: 108px;
         grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin-top: 28px;
+        padding: 12px 8px;
     }
 
-    .availability>div {
-        padding-inline: 8px;
+    .availability-item {
+        min-height: 82px;
+        gap: 8px;
+        padding: 6px 8px;
+    }
+
+    .availability-item svg {
+        width: 38px;
+        height: 38px;
+    }
+
+    .availability span {
+        font-size: var(--font9);
+    }
+
+    .availability strong {
+        font-size: var(--font11);
     }
 
     .our-story {
